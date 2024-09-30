@@ -85,5 +85,3 @@ def controllo(lista):
 #sasso finche non va 
 
 print(controllo(dati))
-
-#prova commit
