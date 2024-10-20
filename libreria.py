@@ -9,7 +9,8 @@ print("-------------------------\n")
 
 
 def addBook(name, title, mark):
-    library[title] = {"Autore":name,"voto":mark}
+        if name not in library:
+            library[title] = {"Autore":name,"voto":mark}
 
 addBook("Desy", "Viaggio tra le formiche", 6)
 print(" Seconda print")
@@ -35,7 +36,7 @@ print("-------------------------\n")
 ##    mark = num
 ##    for i in library:
 ##        if library[i] == title:
-##            library[i]["voto"] = mark
+##            library["voto"] = mark
 ##modifyMark("Il sottopalla", 10)
 ##print("Quarta print")
 ##print(library)

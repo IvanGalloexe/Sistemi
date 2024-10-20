@@ -1,20 +1,30 @@
 architettura Router
-	modello iso-osi, controlli per passare il messaggio da un dispositivo all'altro, 7 livelli PDNTSPA(fisico, datalink, network, transport, session, presentation, application)
+	modello iso-osi, controlli per passare il messaggio da un dispositivo 
+	all'altro, 7 livelli PDNTSPA(fisico, datalink, network, transport, session, 
+	presentation, application)
 	schede di rete ethernet o wifi
 	tcp-ip ha 4 livelli 1-LINK, 2-NETWORK, 3-TRANSPORT, 4-APPLICATION
 	classificazione delle reti -> ban pan man lan wan
 
-	routing (Livello 3 ISO OSI) -> instradamento, il router permette la comunicazione tra dispositivi diversi, il messaggio inviato da un router non finisce in tutto l'internet ma il router sceglie la strada migliore e più veloce per spedire i pacchetti al router destinatario
-	i router hanno degli algoritmi per costruire la "routing table" aggiornandosi con la distanza e la velocità degli altri router
+	routing (Livello 3 ISO OSI) -> instradamento, il router permette la 
+	comunicazione tra dispositivi diversi, il messaggio inviato da un router non 
+	finisce in tutto l'internet ma il router sceglie la strada migliore e più 
+	veloce per spedire i pacchetti al router destinatario
+	i router hanno degli algoritmi per costruire la "routing table" aggiornandosi 
+	con la distanza e la velocità degli altri router
 
 	19092024
-	il router ha le stesse componenti di un pc, cambia come un pc nella forma nelle prestazioni ecc.
+	il router ha le stesse componenti di un pc, cambia come un pc nella forma 
+	nelle prestazioni ecc.
 
 	Router Cisco series 2600
-	un router di Cisco ha le sue porte di uscita e le sue memorie, il suo cpu e i suoi bus.
+	un router di Cisco ha le sue porte di uscita e le sue memorie, il suo cpu e i 
+	suoi bus.
 
-	-la CPU esegue le istruzioni, le funzioni di routing e il controllo di interfacce
-	-la RAM contiente la configurazione del router, la routing table, la cache del fast switch, e le funzioni della ram normale
+	-la CPU esegue le istruzioni, le funzioni di routing e il controllo di 
+	 interfacce
+	-la RAM contiente la configurazione del router, la routing table, la cache 
+	 del fast switch, e le funzioni della ram normale
 	-la Flash memorizza il Cisco iOS
 	-NVRAM contiene la startup routine
 	-ROM contiene il sistema base e di diagnostica del router
@@ -34,10 +44,32 @@ architettura Router
 
 		router>show version -> mostra la versione del router 
 
-		startup router -> POST power on self test -> verifica tramite una diagnostica se tutto funziona, ed è salvato in una rom
+		startup router -> POST power on self test -> verifica tramite una
+		diagnostica se tutto funziona, ed è salvato in una rom
 
 		protocollo RIP
 
 		per passare da user a privilegiato si usa il comando enable e disable 
 		ena -> serve per fare enable e diventare privilegiati
 		
+------------------------------ 08/10/2024 ----------------------------------------
+	
+	insieme di modi per raggiungere il nodo finale tramite dei nodi di 
+	commutazione e nel minor tempo possibile
+
+	kruscal -> usato in campo medico, per prevedere dove le cellule tumorali 
+	possano andare
+
+	l'instradamento -> diretto -> inoltro diretto senza usare un nodo intermedio
+					-> indiretto -> usa la tabella di routing e usa nodi intermedi
+
+	default gateway -> usato nel caso in cui nella tabella di routing non ci sia 
+					   un next hop
+
+	la table routing elenca per ogni sottorete il suo specifico netID e IP del 
+	router d' inolto
+
+	indirizzo della rete di destinazione (N)
+	maschera di rete (M)
+	interfaccia su cui inoltrare (I)
+	indirizzo del prossimo router (NH)

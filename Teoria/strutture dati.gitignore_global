@@ -1,0 +1,39 @@
+strutture dati
+    list -> raccolta ordinata e modificabile di elementi (usa le [])
+                    [gatto, cane] -> posizione[0] è gatto
+    .append aggiunge alla fine lista.
+
+    tuple -> raccolta ordinata e immutabile di elementi (usa le ())-> non modificabile minimo 2 elementi 
+    
+
+
+    set -> raccolta non ordinata di elementi unici, no duplicati
+    numeri = {1,2,3,4,5}
+    numeri.add(6) -> aggiungo il 6
+    set_aggiornato = numeri -> aggiorna
+    
+    dict -> raccolta non ordinata di coppie chiave valore, le chiavi sono uniche
+    dict = {"nome" : "Mario", "Eta" : 30}
+    valore_nome = dict["nome"]
+    dict["citta"] = "Roma"
+    del dict["citta"] elimina il valore
+    eta = dict.pop("Eta")
+    dict.get("nome","non trovato")
+    dict_aggiornato = dict viene set_aggiornato
+
+    for chiave in dict:
+        print(chiave, dict[chiave]) stampa sia la chiave sia il valore della chiave
+    
+    for chiave, valore in dict.items():
+        print(chiave, valore)
+        
+    
+    string -> sequenza di caratteri
+    frase = "ciao, come va?"
+    lunghezza_stringa = len(frase)
+    stringa_modifica = frase.replace("Ciao","Salve")
+
+    counter -> chiamato da libreria "from collection import counter", sequenza di caratteri immutabili
+
+    letter_counter = Counter("hello world")
+    frutti = ["mela","banana","mela","","",""]

@@ -82,6 +82,23 @@ def controllo(lista):
         
     return listaNumeri, listaString
    
-#sasso finche non va 
+
+
+
+
+
+
+
 
 print(controllo(dati))
+
+def sommaeMedia(dati):
+    somma = 0
+    listaNumeri = controllo(lista)
+
+
+    for i in range(len(listaNumeri)):
+        somma = i
+
+    media = somma/len(listaNumeri)
+print(sommaeMedia(dati))
